@@ -163,7 +163,7 @@ class Decoder(LightningModule):
         """
         # MODEL specific
         parser = ArgumentParser(parents=[parent_parser], add_help=False)
-        parser.add_argument('--lr', default=0.02, type=float)
+        parser.add_argument('--lr', default=5e-5, type=float)
         parser.add_argument('--batch_size', default=8, type=int)
         parser.add_argument('--warmup_steps', default=5000, type=int,
                             help='Number of steps that is used for the linear warumup')
